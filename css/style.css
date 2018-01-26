@@ -1,0 +1,326 @@
+
+/*Common styles*/
+html {
+  width: inherit;
+  background-color: #F2F2F2;
+}
+
+div, nav, p {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 20px auto 0 auto;
+  background-color: rgb(186, 184, 184);
+  color: white;
+  position: relative;
+  max-width: 1733px;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+section {
+  box-sizing: border-box;
+  max-width: inherit;
+  width: 100%;
+  font-size: x-large;
+  padding: 20px 5px;
+  min-width: inherit;
+}
+
+/*Styles for nav*/
+
+nav {
+  font-size: large;
+  margin: 0px;
+  display: flex;
+  padding: 5px 5px;
+  background-color: rgb(148, 141, 141);
+  min-width: inherit;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 0;
+}
+
+nav p {
+  font-size: x-large;
+  color: rgb(229, 168, 83);
+  margin: 10px auto 10px 0;
+}
+
+nav p span {
+  vertical-align: middle;
+}
+
+nav ul li {
+  flex: 0 0 auto;
+  padding-left: 20px;
+}
+
+nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+nav ul li a:visited {
+  color: inherit;
+  text-decoration: none; 
+}
+
+/*Styles for ABOUT*/
+
+section#about {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  min-width: inherit;
+}
+
+section#about div#textAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 0px 20px;
+  margin: 0px -5px;
+  border-top: 20px solid rgb(229, 168, 83);
+  border-bottom: 20px solid rgb(229, 168, 83);
+  min-width: 300px;
+}
+
+section#about div#textAbout span {
+  padding: 0 0 20px 0;
+  margin: 0;
+  max-width: 600px;
+  border-bottom: 2px solid white;
+  text-align: justify;
+  min-width: 115px;
+  flex-shrink: 0;
+}
+
+section#about div#textAbout ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  padding-top: 20px;
+  margin: 0px;
+}
+
+section#about div#textAbout ul li {
+  padding-right: 10px;
+}
+
+section#about div#textAbout ul li:last-child {
+  padding-right: 0;
+}
+
+section#about img {
+  border-radius: 5px;
+  border: 3px solid white;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+/*Styles for PORTFOLIO*/
+
+section#projects {
+  background-color: rgb(229, 227, 223);
+  color: rgb(148, 141, 141);
+  border-bottom: 20px solid rgb(229, 168, 83);
+}
+
+h3 {
+  width: 100%;
+  text-align: center;
+}
+
+section#projects div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+section#projects div a {
+  margin: 10px;
+}
+
+section#projects div img {
+  border: 2px solid rgb(148, 141, 141);
+}
+
+/*Styles for CONTACTS*/
+
+section#contacts div {
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+}
+
+section#contacts div p, section#contacts div ul {
+  margin: 20px;
+}
+
+section#contacts div ul li {
+  padding-bottom: 5px;
+}
+
+section#contacts a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    text-decoration: underline;
+}
+
+section#contacts a:hover {
+      color: inherit;
+      text-decoration: none;
+}
+
+section#contacts a:visited {
+      color: inherit;
+      text-decoration: none; 
+}
+
+/*Styles for FOOTER*/
+
+footer {
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  max-width: 3000px;
+  margin: auto;
+  background-color: rgb(148, 141, 141);;
+  color: white;
+  font-size: x-small;
+  padding-left: 3px;
+  box-sizing: border-box;
+  min-width: inherit; 
+}
+
+footer img {
+    margin-left: 4px;
+    height: 20px;
+    vertical-align: bottom; 
+}
+
+footer span {
+    vertical-align: super;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+    text-decoration: underline;
+}
+
+footer a:hover {
+      color: inherit;
+      text-decoration: none;
+}
+
+footer a:visited {
+      color: inherit;
+      text-decoration: none; 
+}
+
+@media only screen and (max-width: 775px) {
+  
+  section#about {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 20px solid rgb(229, 168, 83);
+    font-size: medium;
+  }
+
+  section#about img {
+    margin-top: 20px;
+    width: 300px;
+    align-self:center; 
+  }
+
+  section#projects div img {
+    width: 300px;
+  }
+
+  section#about div#textAbout span  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  section#about div#textAbout ul li {
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  nav ul {
+    flex-direction: column;
+    padding-right: 5px;
+    margin: 10px 0 0 10px;
+  }
+
+  nav ul li:first-child {
+    padding-bottom: 15px;   
+  }
+
+  section#about {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 20px solid rgb(229, 168, 83);
+    font-size: medium;
+  }
+
+  section#about img {
+    margin-top: 20px;
+    width: 300px;
+    align-self:center; 
+  }
+
+  section#projects div img {
+    width: 300px;
+  }
+
+  section#about div#textAbout span  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  section#about div#textAbout ul li {
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
