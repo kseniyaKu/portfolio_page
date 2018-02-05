@@ -1,8 +1,8 @@
-
 /*Common styles*/
 html {
+  box-sizing: border-box;
   width: inherit;
-  background-color: #F2F2F2;
+  background-color: rgb(229, 168, 83);
 }
 
 div, nav, p {
@@ -12,12 +12,11 @@ div, nav, p {
 body {
   margin: 20px auto 0 auto;
   background-color: rgb(186, 184, 184);
-  color: white;
+  color: #F5F5F5;
   position: relative;
-  max-width: 1733px;
   width: 100%;
   min-width: 320px;
-  height: 100%;
+  font-family: Montserrat, Arial, Vernada, sans-serif;
 }
 
 ul {
@@ -54,7 +53,6 @@ nav ul {
 
 nav p {
   font-size: x-large;
-  color: rgb(229, 168, 83);
   margin: 10px auto 10px 0;
 }
 
@@ -106,13 +104,14 @@ section#about div#textAbout {
 }
 
 section#about div#textAbout span {
-  padding: 0 0 20px 0;
+  padding: 0 20px 20px 20px;
   margin: 0;
   max-width: 600px;
   border-bottom: 2px solid white;
   text-align: justify;
   min-width: 115px;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 section#about div#textAbout ul {
@@ -246,7 +245,7 @@ footer a:visited {
       text-decoration: none; 
 }
 
-@media only screen and (max-width: 775px) {
+@media only screen and (max-width: 962px) {
   
   section#about {
     flex-wrap: wrap;
